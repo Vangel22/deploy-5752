@@ -1,0 +1,7 @@
+- Napravete go cars handlerot da funkcionira
+
+*Bonus -> vovedete Multitenancy
+Hint: Gledajte go posts handlerot
+
+Imame account koj ima avtomobil, ni treba da go povrzeme account so avtomobilot.
+Iskoristete populate za mi go pokazete fullname na sopstvenikot na avtomobilot.

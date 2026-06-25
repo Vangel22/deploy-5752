@@ -37,12 +37,12 @@ api.use(function (err, req, res, next) {
   }
 });
 
-api.listen(config.getSection("services").auth.port, (err) => {
+api.listen(getSection("services").auth.port, (err) => {
   if (err) {
     return console.log(err);
   }
   console.log(
     "Service [auth] successfully started on port",
-    config.getSection("services").auth.port,
+    getSection("services").auth.port,
   );
 });

@@ -13,12 +13,8 @@ const init = () => {
   const dbname = getSection("db").dbname;
   const dsn = `mongodb+srv://${username}:${password}@cluster0.12jzasd.mongodb.net/${dbname}?retryWrites=true&w=majority`;
 
-  mongoose.connect(dsn, (err) => {
-    if (err) {
-      return console.log("Could not connect to db", err);
-    }
-    console.log("Successfully connetcted to db");
-  });
+  mongoose.connect(dsn);
+  console.log("Connected!");
 };
 
 module.exports = {
